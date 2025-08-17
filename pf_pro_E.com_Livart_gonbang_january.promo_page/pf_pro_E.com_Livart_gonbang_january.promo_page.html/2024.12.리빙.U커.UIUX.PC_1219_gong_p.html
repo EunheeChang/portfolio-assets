@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>기획전명</title>
+		<link rel="stylesheet" href="https://static.hyundailivart.co.kr/assets/css/promotion/livart.css" />
+		<link rel="stylesheet" href="https://static.hyundailivart.co.kr/assets/css/promotion/newLivart.css" />
+		<link rel="stylesheet" href="https://static.hyundailivart.co.kr/assets/css/style.css" />
+		<link rel="stylesheet" href="https://static.hyundailivart.co.kr/assets/css/swiper.min.css" />
+		<script src="https://static.hyundailivart.co.kr/assets/js/jquery.min.js"></script>
+		<script src="https://static.hyundailivart.co.kr/assets/js/swiper.min.js"></script>
+		<script src="https://static.hyundailivart.co.kr/assets/js/common-ui.js"></script>
+		<script src="https://static.hyundailivart.co.kr/assets/js/promotion/countDown.js"></script>
+	</head>
+
+	<body>
+		<div class="editor-format content text-initial lvt-promotion">
+			<!-- S : 메인에디터 -->
+			<style>
+				.position-relative {
+					max-width: 1920px;
+					margin: 0 auto;
+				}
+				.pdt80 {
+					padding-top: 80px;
+				}
+				.lvt-promotion .tab-buttons {
+					width: 100%;
+					max-width: 1920px;
+					margin: 0 auto !important;
+					padding-top: 5px !important;
+					align-items: flex-start;
+					justify-content: center;
+					border-bottom: 1px solid #ffffffa3;
+				}
+				.lvt-promotion .tab-buttons .is-active {
+					border-bottom: 3px solid #fff;
+				}
+				.lvt-promotion .box4.tab01 li:not(:first-child) {
+					margin-left: 60px !important;
+				}
+				.lvt-promotion .box4.tab02 li:not(:first-child) {
+					margin-left: 100px !important;
+				}
+				.planning-items-list .tab-buttons li {
+					margin: 0;
+					cursor: pointer;
+				}
+				.tab-buttons li + li {
+					margin-top: 0;
+				}
+				div.tab-content {
+					display: none;
+				}
+				div.tab-content.is-active {
+					display: block;
+				}
+				.flow-container2::before,
+				.flow-container3::before {
+					display: block;
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 560px;
+					height: 500px;
+					background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #202020d8 100%);
+					transform: translate(0, -50%);
+					z-index: 2;
+				}
+				.flow-container2::after,
+				.flow-container3::after {
+					display: block;
+					content: '';
+					position: absolute;
+					top: 50%;
+					right: 0;
+					width: 560px;
+					height: 500px;
+					background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #202020d8 100%);
+					transform: translate(0, -50%);
+					z-index: 2;
+				}
+				.swiper-pagination-bullet-active {
+					background: #fff;
+				}
+				.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+					margin: 0 14px;
+					width: 10px;
+					height: 10px;
+					background: #fff;
+				}
+			</style>
+			<div class="lvt-bg" style="background: url(https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/b01.jpg)">
+				<div class="promotion">
+					<p><img alt="독창적인 공예품으로 공간과 마음을 채워보세요" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/01.jpg" /></p>
+				</div>
+			</div>
+			<div class="lvt-bg position-relative" style="background: #202020">
+				<div class="promotion">
+					<p><img alt="이벤트1 5% 특별할인" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/02.jpg" /></p>
+					<p>
+						<a href="#coupon" onclick="$.eshopfront.cmm.issueCoupon({'cpnSns':'CPN0007377'})"><img alt="5% 할인 쿠폰 다운로드" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/03.jpg" /></a>
+					</p>
+					<p><img alt="쿠폰 유의사항" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/04.jpg" /></p>
+				</div>
+			</div>
+			<div class="lvt-bg position-relative" style="background: #3b3b3b">
+				<div class="promotion">
+					<p><img alt="이벤트2 포토상품평" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/06.jpg" /></p>
+					<p>
+						<a href="https://www.hyundailivart.co.kr/eventDetail/E200000522"><img alt="포토상품평 이벤트 바로가기" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/07.jpg" /></a>
+					</p>
+				</div>
+			</div>
+			<!-- E : 메인에디터 -->
+
+			<!-- S : 홈데코 -->
+			<div class="lvt-promotion">
+				<div class="lvt-bg position-relative" id="homedeco" style="background: #202020">
+					<ul class="box4 tab-buttons tab01">
+						<li class="is-active">
+							<a href="#homedeco"><img alt="홈데코" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-1-on.png" /></a>
+						</li>
+						<li>
+							<a href="#tableware"><img alt="테이블웨어" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-3.png" /></a>
+						</li>
+						<li>
+							<a href="#glassware"><img alt="글래스웨어" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-2.png" /></a>
+						</li>
+						<li>
+							<a href="#furniture"><img alt="가구" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-4.png" /></a>
+						</li>
+					</ul>
+					<div class="pdt80">
+						<div class="swiper-container flow-container3">
+							<div class="swiper-wrapper flow-wrapper3">
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/09-1-1.png" alt="" /></div>
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/09-1-2.png" alt="" /></div>
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/09-1-3.png" alt="" /></div>
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/09-1-4.png" alt="" /></div>
+							</div>
+							<div class="swiper-pagination"><span class="sr-only">pagination</span></div>
+						</div>
+					</div>
+					<div class="promotion">
+						<p>
+							<a href="#homedecoGo"><img alt="공방 상품 보러가기" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/10.jpg" /></a>
+						</p>
+					</div>
+					<p id="homedecoGo" style="text-indent: -14285.571vw">홈데코 상품</p>
+				</div>
+			</div>
+			<!-- E : 홈데코 -->
+
+			<!-- S : 테이블웨어 -->
+			<div class="lvt-promotion">
+				<div class="lvt-bg position-relative" id="tableware" style="background: #202020">
+					<ul class="box4 tab-buttons tab01">
+						<li>
+							<a href="#homedeco"><img alt="홈데코" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-1.png" /></a>
+						</li>
+						<li class="is-active">
+							<a href="#tableware"><img alt="테이블웨어" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-3-on.png" /></a>
+						</li>
+						<li>
+							<a href="#glassware"><img alt="글래스웨어" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-2.png" /></a>
+						</li>
+						<li>
+							<a href="#furniture"><img alt="가구" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-4.png" /></a>
+						</li>
+					</ul>
+					<div class="pdt80">
+						<div class="swiper-container flow-container3">
+							<div class="swiper-wrapper flow-wrapper3">
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/09-3-1.png" alt="" /></div>
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/09-3-2.png" alt="" /></div>
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/09-3-3.png" alt="" /></div>
+							</div>
+							<div class="swiper-pagination"><span class="sr-only">pagination</span></div>
+						</div>
+					</div>
+					<div class="promotion">
+						<p>
+							<a href="#tablewareGo"><img alt="공방 상품 보러가기" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/10.jpg" /></a>
+						</p>
+					</div>
+					<p id="tablewareGo" style="text-indent: -14285.571vw">테이블웨어 상품</p>
+				</div>
+			</div>
+			<!-- E : 테이블웨어 -->
+
+			<!-- S : 글래스웨어 -->
+			<div class="lvt-promotion">
+				<div class="lvt-bg position-relative" id="glassware" style="background: #202020">
+					<ul class="box4 tab-buttons tab01">
+						<li>
+							<a href="#homedeco"><img alt="홈데코" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-1.png" /></a>
+						</li>
+						<li>
+							<a href="#tableware"><img alt="테이블웨어" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-3.png" /></a>
+						</li>
+						<li class="is-active">
+							<a href="#glassware"><img alt="글래스웨어" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-2-on.png" /></a>
+						</li>
+						<li>
+							<a href="#furniture"><img alt="가구" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-4.png" /></a>
+						</li>
+					</ul>
+					<div class="pdt80">
+						<div class="swiper-container flow-container3">
+							<div class="swiper-wrapper flow-wrapper3">
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/09-2-1.png" alt="" /></div>
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/09-2-2.png" alt="" /></div>
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/09-2-3.png" alt="" /></div>
+							</div>
+							<div class="swiper-pagination"><span class="sr-only">pagination</span></div>
+						</div>
+					</div>
+					<div class="promotion">
+						<p>
+							<a href="#glasswareGo"><img alt="공방 상품 보러가기" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/10.jpg" /></a>
+						</p>
+					</div>
+					<p id="glasswareGo" style="text-indent: -14285.571vw">글래스웨어 상품</p>
+				</div>
+			</div>
+			<!-- E : 글래스웨어 -->
+
+			<!-- S : 가구 -->
+			<div class="lvt-promotion">
+				<div class="lvt-bg position-relative" id="furniture" style="background: #202020">
+					<ul class="box4 tab-buttons tab01">
+						<li>
+							<a href="#homedeco"><img alt="홈데코" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-1.png" /></a>
+						</li>
+						<li>
+							<a href="#tableware"><img alt="테이블웨어" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-3.png" /></a>
+						</li>
+						<li>
+							<a href="#glassware"><img alt="글래스웨어" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-2.png" /></a>
+						</li>
+						<li class="is-active">
+							<a href="#furniture"><img alt="가구" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/tab01-4-on.png" /></a>
+						</li>
+					</ul>
+					<div class="pdt80">
+						<div class="swiper-container flow-container3">
+							<div class="swiper-wrapper flow-wrapper3">
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/09-4-1.png" alt="" /></div>
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/09-4-2.png" alt="" /></div>
+								<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/09-4-3.png" alt="" /></div>
+							</div>
+							<div class="swiper-pagination"><span class="sr-only">pagination</span></div>
+						</div>
+					</div>
+					<div class="promotion">
+						<p>
+							<a href="#furnitureGo"><img alt="공방 상품 보러가기" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/10.jpg" /></a>
+						</p>
+					</div>
+					<p id="furnitureGo" style="text-indent: -14285.571vw">가구 상품</p>
+				</div>
+			</div>
+			<!-- E : 가구 -->
+
+			<!-- S : 원데이 클래스 -->
+			<div class="lvt-promotion">
+				<div class="lvt-bg position-relative" style="background: #3c3c3c">
+					<p><img alt="리바트 공방에서 만나는 다양한 원데이클래스" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/08.jpg" /></p>
+					<div class="tab-group">
+						<ul class="box4 tab-buttons tab02">
+							<li class="is-active"><img alt="도트온 달항아리 클래스" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/tab02-1-on.png" /></li>
+							<li><img alt="정근날 도마 클래스" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/tab02-2.png" /></li>
+							<li><img alt="정근날 커트러리 클래스" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/tab02-3.png" /></li>
+							<li><img alt="도트온 어린이 클래스" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/tab02-4.png" /></li>
+						</ul>
+						<p><img alt="리바트 공방에서 만나는 다양한 원데이클래스" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/12.jpg" /></p>
+						<div class="tab-contents">
+							<div class="tab-content is-active">
+								<div class="swiper-container flow-container2">
+									<div class="swiper-wrapper flow-wrapper2">
+										<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/13-2-3.png" alt="" /></div>
+										<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/13-2-1.png" alt="" /></div>
+										<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/13-2-2.png" alt="" /></div>
+									</div>
+									<div class="swiper-pagination"><span class="sr-only">pagination</span></div>
+								</div>
+								<p>
+									<a href="https://www.hyundailivart.co.kr/workshop/classDetail/WS00000012"><img alt="클래스 신청하기" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/14.jpg" /></a>
+								</p>
+							</div>
+							<div class="tab-content">
+								<div class="swiper-container flow-container2">
+									<div class="swiper-wrapper flow-wrapper2">
+										<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/13-1-3.png" alt="" /></div>
+										<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/13-1-1.png" alt="" /></div>
+										<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/13-1-2.png" alt="" /></div>
+									</div>
+									<div class="swiper-pagination"><span class="sr-only">pagination</span></div>
+								</div>
+								<p>
+									<a href="https://www.hyundailivart.co.kr/workshop/classDetail/WS00000000"><img alt="클래스 신청하기" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/14.jpg" /></a>
+								</p>
+							</div>
+							<div class="tab-content">
+								<div class="swiper-container flow-container2">
+									<div class="swiper-wrapper flow-wrapper2">
+										<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/13-3-1.png" alt="" /></div>
+										<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/13-3-2.png" alt="" /></div>
+									</div>
+									<div class="swiper-pagination"><span class="sr-only">pagination</span></div>
+								</div>
+								<p>
+									<a href="https://www.hyundailivart.co.kr/workshop/classDetail/WS00000016"><img alt="클래스 신청하기" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/14.jpg" /></a>
+								</p>
+							</div>
+							<div class="tab-content">
+								<div class="swiper-container flow-container2">
+									<div class="swiper-wrapper flow-wrapper2">
+										<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/13-4-1.png" alt="" /></div>
+										<div class="swiper-slide"><img src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/13-4-2.png" alt="" /></div>
+									</div>
+									<div class="swiper-pagination"><span class="sr-only">pagination</span></div>
+								</div>
+								<p>
+									<a href="https://www.hyundailivart.co.kr/workshop/classDetail/WS00000014"><img alt="클래스 신청하기" src="https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/14.jpg" /></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				var swiper = new Swiper('.flow-container3', {
+					slidesPerView: 2.5,
+					spaceBetween: 40,
+					centeredSlides: true,
+					speed: 800,
+					loop: true,
+					pagination: {
+						el: '.swiper-pagination',
+					},
+					autoplay: {
+						delay: 3000,
+						disableOnInteraction: false,
+					},
+				});
+
+				$(document).ready(function () {
+					// Swiper 초기화 함수
+					function initSwiper(container) {
+						return new Swiper(container, {
+							slidesPerView: 2.5,
+							spaceBetween: 40,
+							centeredSlides: true,
+							speed: 800,
+							loop: true,
+							pagination: {
+								el: '.swiper-pagination',
+							},
+							autoplay: {
+								delay: 3000,
+								disableOnInteraction: false,
+							},
+							observer: true,
+							observeParents: true,
+						});
+					}
+
+					// 각 탭 그룹에 대해 초기화
+					$('.tab-group').each(function (groupIndex) {
+						const $group = $(this); // 현재 탭 그룹
+						// const groupId = `tab0${groupIndex + 1}`; // 그룹 ID: tab01, tab02, ...
+						const swipers = []; // 이 그룹의 Swiper 인스턴스들
+
+						// 이 그룹의 모든 슬라이더 초기화
+						$group.find('.flow-container2').each(function () {
+							const swiper = initSwiper(this);
+							swipers.push(swiper);
+						});
+
+						// 탭 클릭 이벤트
+						$group.find('.tab-buttons li').click(function () {
+							const idx = $(this).index(); // 클릭한 탭의 인덱스
+
+							// 탭 상태 변경
+							$group
+								.find('.tab-buttons li')
+								.removeClass('is-active')
+								.each(function (i) {
+									$(this)
+										.children('img')
+										// .attr('src', `https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1119_gong_p/${groupId}-${i + 1}${i === idx ? '-on' : ''}.png`);
+										.attr('src', `https://static.hyundailivart.co.kr/upload_mall/userupload/01_living/exhbt/2024/1219_gong_p/tab02-${i + 1}${i === idx ? '-on' : ''}.png`);
+								});
+							$(this).addClass('is-active');
+
+							// 콘텐츠 활성화
+							$group.find('.tab-contents .tab-content').removeClass('is-active').eq(idx).addClass('is-active');
+
+							// Swiper 상태 관리
+							swipers.forEach((swiper, i) => {
+								if (i === idx) {
+									swiper.slideTo(1, 0, true); // 두 번째 슬라이드로 이동
+									// swiper.slideTo(0, 0, true); // 첫 번째 슬라이드로 이동
+									swiper.autoplay.running = true; // autoplay 시작
+									swiper.update(); // 업데이트
+								} else {
+									swiper.autoplay.paused = true; // 다른 Swiper는 autoplay 중지
+								}
+							});
+						});
+
+						// 초기화: 첫 번째 탭 활성화
+						$group.find('.tab-buttons li:first').addClass('is-active');
+						$group.find('.tab-contents .tab-content:first').addClass('is-active');
+						// swipers[0].slideTo(1, 0, true); // 첫 번째 Swiper를 두 번째 슬라이드로 설정(첫번째 슬라이드일땐 안씀)
+						swipers[0].autoplay.running = true; // 첫 번째 Swiper autoplay 시작
+					});
+				});
+			</script>
+			<!-- E : 원데이 클래스 -->
+		</div>
+	</body>
+</html>
